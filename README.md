@@ -11,9 +11,8 @@ TrafficPH Insight is a web-based platform designed to provide commuters and moto
 
 ### ✨ Key Features
 * **Real-Time Traffic Layers:** Live congestion data powered by TomTom.
-* **Interactive Map:** Click anywhere to get coordinates and location names.
+* **Interactive Map:** Click anywhere to get coordinates.
 * **ETA Calculation:** Estimate travel times based on current road conditions.
-* **Mobile-First Design:** Fully responsive layout built specifically for ease of use on the go.
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript
