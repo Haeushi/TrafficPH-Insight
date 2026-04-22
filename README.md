@@ -1,3 +1,21 @@
-TrafficPH Insight is a web-based information platform
-designed to provide citizens with up-to-date insights on local infrastructure, 
-micro-mobility, and traffic management solutions.
+# 🚦 TrafficPH Insight
+> **Real-time traffic monitoring and infrastructure updates for Metro Manila.**
+
+## 🔗 Live Demo
+**[Launch TrafficPH Insight Website](https://[your-username].github.io/TrafficPH-Insight/)**
+
+---
+
+## 📱 Project Overview
+TrafficPH Insight is a web-based platform designed to provide commuters and motorists with real-time traffic data. Developed as part of the Information Systems curriculum, this project focuses on accessibility and real-time API integration.
+
+### ✨ Key Features
+* **Real-Time Traffic Layers:** Live congestion data powered by TomTom.
+* **Interactive Map:** Click anywhere to get coordinates and location names.
+* **ETA Calculation:** Estimate travel times based on current road conditions.
+* **Mobile-First Design:** Fully responsive layout built specifically for ease of use on the go.
+
+## 🛠️ Tech Stack
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Maps & Data:** TomTom Maps SDK & Traffic API
+* **Hosting:** GitHub Pages
