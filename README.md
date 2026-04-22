@@ -2,7 +2,7 @@
 > **Real-time traffic monitoring and infrastructure updates for Metro Manila.**
 
 ## 🔗 Live Demo
-**[Launch TrafficPH Insight Website](https://[your-username].github.io/TrafficPH-Insight/)**
+**[Launch TrafficPH Insight Website](https://haeushi.github.io/TrafficPH-Insight/)**
 
 ---
 
