@@ -1,0 +1,47 @@
+#aboutInfo {
+    text-align: justified;
+}
+
+/* =========================================
+   ABOUT PAGE SPECIFIC STYLES
+   ========================================= */
+
+/* Developer Image styling to fit the Featured Card layout */
+.developer-img {
+    flex: 1;
+    background: #444 url('../images/your-profile.jpg') center/cover;
+    min-height: 300px;
+    border-right: 1px solid #333;
+}
+
+/* Adjusting the grid for the Mission Section cards */
+.about-mission-grid {
+    margin-bottom: 60px;
+}
+
+/* Styling for the developer content specifically */
+.featured-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.featured-content p {
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+
+/* Small UI fix for active link in navbar */
+.nav-links a.active {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 5px;
+}
+
+/* Mobile fix for Developer Section */
+@media (max-width: 768px) {
+    .developer-img {
+        min-height: 250px;
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+}

@@ -1,0 +1,144 @@
+/* =========================================
+   VARIABLES & RESET
+   ========================================= */
+:root {
+    --primary: #3498db;
+    --primary-hover: #2980b9;
+    --dark-bg: #1a1c20;
+    --card-bg: #25282e;
+    --text-main: #ffffff;
+    --text-muted: #b0b3b8;
+    --nav-bg: rgba(0, 0, 0, 0.85);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   NAVIGATION (Shared Style)
+   ========================================= */
+.navbar {
+    background: var(--nav-bg);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: white; }
+.logo span { color: var(--primary); }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: var(--text-main); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+.nav-links a:hover { color: var(--primary); }
+
+/* =========================================
+   ADVERTISE HEADER
+   ========================================= */
+.ad-header {
+    padding: 100px 0 60px;
+    background: linear-gradient(rgba(26, 28, 32, 0.8), rgba(26, 28, 32, 0.9)), 
+                url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1200');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.ad-header h1 { font-size: 3.5rem; margin-bottom: 15px; }
+.ad-header p { color: var(--text-muted); font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+
+/* =========================================
+   AD CONTENT SECTION
+   ========================================= */
+.ad-main { padding: 60px 0 100px; }
+
+.ad-intro { text-align: center; margin-bottom: 60px; }
+.ad-intro h2 { font-size: 2rem; margin-bottom: 20px; }
+.ad-intro p { color: var(--text-muted); max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+
+/* AD PACKAGES GRID */
+.ad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.ad-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.ad-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.ad-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block; }
+.ad-card h3 { margin-bottom: 15px; font-size: 1.4rem; }
+.ad-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* CONTACT BOX */
+.contact-cta {
+    background: var(--card-bg);
+    margin-top: 60px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 5px solid var(--primary);
+}
+
+.contact-cta h2 { margin-bottom: 15px; }
+.email-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: var(--dark-bg);
+    border-radius: 5px;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 1px solid #333;
+}
+
+/* =========================================
+   FOOTER (Shared Style)
+   ========================================= */
+footer { background: #111; padding: 50px 0 20px; border-top: 1px solid #333; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.footer-links ul { list-style: none; }
+.footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; line-height: 2; }
+.footer-links a:hover { color: var(--primary); }
+.footer-copy { text-align: center; margin-top: 30px; border-top: 1px solid #222; padding-top: 20px; color: #555; font-size: 0.85rem; }
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 900px) {
+    .ad-grid { grid-template-columns: 1fr; }
+    .ad-header h1 { font-size: 2.5rem; }
+}

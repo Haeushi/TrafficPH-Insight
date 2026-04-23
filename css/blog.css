@@ -1,0 +1,73 @@
+/* Blog Header/Banner */
+.blog-header {
+    padding: 80px 0 40px;
+    background: linear-gradient(to bottom, #25282e, var(--dark-bg));
+    text-align: center;
+}
+
+.blog-header h1 { font-size: 3rem; margin-bottom: 10px; }
+.blog-header p { color: var(--text-muted); font-size: 1.1rem; }
+
+/* Blog Post List */
+.blog-content { padding: 40px 0 40px; } /* Reduced bottom padding */
+
+.blog-post-card {
+    display: flex;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.blog-post-img {
+    width: 350px;
+    min-height: 250px;
+    flex-shrink: 0; /* Added this to prevent image squishing */
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-post-info {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-tag {
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.blog-post-info h2 { margin-bottom: 15px; font-size: 1.8rem; }
+.blog-post-info p { color: var(--text-muted); margin-bottom: 20px; }
+
+.btn-read {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.btn-read:hover { text-decoration: underline; }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    .blog-post-card { flex-direction: column; }
+    .blog-post-img { width: 100%; height: 200px; }
+    .blog-header h1 { font-size: 2.2rem; }
+}
