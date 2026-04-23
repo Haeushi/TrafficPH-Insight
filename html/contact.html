@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TrafficPH Insight</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/trafficIcon.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">         
+            <a href="index.html" class="logo">TrafficPH <span>Insight</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/mapFunction/maps.html">Live Map</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span class="meta-info">Get in touch</span>
+            <h1>Contact Us</h1>
+            <p style="color: var(--text-muted);">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-wrapper">
+            
+            <section class="contact-form-section">
+                <form action="https://formspree.io/f/mnjlnaep" method="POST" class="contact-form">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Type your full name..." required>
+                </div>
+    
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="business">Business Proposal</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Contact Form Submission!">
+
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1rem;">
+                SEND MESSAGE
+                </button>
+                </section>
+
+            <section class="contact-info-section">
+                <div class="info-card">
+                    <h3 class="section-title">Direct Reach</h3>
+                    <p>📧 <strong>Email:</strong> haruhi.shizue@gmail.com</p>
+                    <p>📞 <strong>Phone:</strong> +63 123-4567-890</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3 class="section-title">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1EvNFYNcsE/" class="read-more">Facebook ISSOC</a>
+                        <a href="https://www.facebook.com/share/17HcjJUkpN/" class="read-more">Facebook NCBA</a>
+                        <a href="https://www.github.com/Haeushi" class="read-more">Github</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h4>About TrafficPH</h4>
+                <p>Your partner in navigating Philippine roads. Stay updated, stay safe.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/html/privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="/html/advertise.html">Advertise with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 TrafficPH Insight. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
