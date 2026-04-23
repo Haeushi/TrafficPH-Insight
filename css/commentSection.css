@@ -1,0 +1,39 @@
+/* =========================================
+   COMMENT SECTION STYLES
+   ========================================= */
+.comment-section {
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #333; /* Darker border to match your theme */
+    margin-bottom: 80px;
+}
+
+/* This is the wrapper for the widget */
+#comments-section {
+    width: 100%;
+    display: block;
+}
+
+#cusdis_thread {
+    width: 100% !important;
+    background: #2d3238; 
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    margin-top: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't push it off screen */
+}
+
+/* STRETCH THE IFRAME HORIZONTALLY */
+#cusdis_thread iframe {
+    width: 100% !important;
+    min-width: 100% !important;
+    min-height: 300px; /* Gives it vertical room to breathe */
+    color-scheme: white;
+}
+
+.comment-section .section-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
